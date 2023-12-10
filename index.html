@@ -1,21 +1,69 @@
-<!--ye-->
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>lumiscape official website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>lumiscape</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+    <div id="fixed">
+      <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">store</a>
+                </li>
+                <li>
+                    <a href="">about</a>
+                </li>
+                <li>
+                    <a href="">contact</a>
+                </li>
+                <li>
+                  <a href="">projects</a>
+              </li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <h1><i>lumiscape.</i></h1>
-        <p style="margin-top: 70px;"><i>lumiscapeid@gmail.com</i></p> 
-        <p style="margin-top: 85px;"><i>part of <b>Blasius N. Marvin</b>'s projects</i></p> 
-
+        <div id="bg"></div>
+        <h1>lumiscape.</h1>
     </main>
-	<script src="index.js"></script>
+
+    <footer>
+		<div class="copyright">
+			<p>
+				
+			  &copy; MMXXI - 
+			  <script>
+				const num = new Date().toLocaleString('en-US', { year: 'numeric' });
+				function romanize(num) {
+				  var lookup = {M:1000,CM:900,D:500,CD:400,C:100,XC:90,L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1},
+					roman = '',
+					i;
+				  for ( i in lookup ) {
+					while ( num >= lookup[i] ) {
+					  roman += i;
+					  num -= lookup[i];
+					}
+				  }
+				  return roman;
+				}
+			  
+				const year = new Date().getFullYear();
+				const romanYear = romanize(year);
+				document.write(`${romanYear}`);
+			  </script>
+			  
+			  <br>Website designed by arvdevable<br>All rights reserved, <a href="https://arvdevable.github.io/licenses">usage guidelines</a>.
+			</p>
+		  </div>
+		  
+			  
+	</footer>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
+
